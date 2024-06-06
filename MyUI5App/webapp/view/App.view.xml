@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Demo1.MyUI5App.controller.App" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+		<pages>
+				<Page title="My App">
+					<Button text="Press Me" presss=".onPress" type="Emphasized"/>
+				</Page>	
+		</pages>
+		</App>
+	</Shell>
+</mvc:View>
