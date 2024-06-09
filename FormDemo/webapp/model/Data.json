@@ -1,0 +1,7 @@
+{
+	"empData" : [
+	    {"name" : "A", "houseNumber" : "A 101", "Street" : "Johansburg st", "ZIPCode" : "123456", "City" : "Noida", "Country" : "India"},
+	    {"name" : "Divya", "houseNumber" : "B 201", "Street" : "Victory st", "ZIPCode" : "567890", "City" : "Austin", "Country" : "US"},
+	    {"name" : "Arya", "houseNumber": "C 301", "Street": "Plain st", "ZIPCode": "9876554", "City" : "Dellas", "Country": "USA"}
+	]
+}

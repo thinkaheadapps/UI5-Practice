@@ -1,0 +1,246 @@
+<mvc:View 
+    controllerName="i2.FormDemo.controller.HomeView" 
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core">
+    
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="Simple Form Demo">
+                    <VBox class="sapUiSmallMargin">
+                        <HBox>
+                            <Button
+                                text="Simple Form 1"
+                                press=".onSimpleForm1"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/>
+                            <Button
+                                text="Simple Form 2"
+                                press=".onSimpleForm2"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/>
+                            <Button
+                                text="Simple Form 3"
+                                press=".onSimpleForm3"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/>
+                            <Button
+                                text="Simple Form 4"
+                                press=".onSimpleForm4"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/> 
+                            <Button
+                                text="Simple Form 5"
+                                press=".onSimpleForm5"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/> 
+                            <Button
+                                text="Simple Form 6"
+                                press=".onSimpleForm6"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/>    
+                            <Button
+                                text="Simple Form 7"
+                                press=".onSimpleForm7"
+                                type="Emphasized"
+                                class="sapUiSmallMargin"/>       
+                        </HBox>
+
+                        <f:SimpleForm id="SimpleFormChange354"
+                            visible="false"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            title="Address"
+                            labelSpanXL="3"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="4"
+                            emptySpanL="4"
+                            emptySpanM="4"
+                            emptySpanS="0"
+                            columnsXL="1"
+                            columnsL="1"
+                            columnsM="1">
+                            <f:content>
+                                <Label text="Name" />
+                                <Input id="name1" value="{name}" />
+                                <Label text="Street/No." />
+                                <Input id="street1" value="{Street}" />
+                                <Input id="houseNumber1" value="{HouseNumber}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Label text="ZIP Code/City" />
+                                <Input id="zipCode1" value="{ZIPCode}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Input id="city1" value="{City}" />
+                                <Label text="Country" />
+                                <Select id="country1" selectedKey="{Country}">
+                                    <items>
+                                        <core:Item text="England" key="England"/>
+                                        <core:Item text="Germany" key="Germany"/>
+                                        <core:Item text="USA" key="USA"/>
+                                    </items>
+                                </Select>
+                            </f:content>
+                        </f:SimpleForm>
+
+                        <f:SimpleForm id="SimpleFormChange354wide"
+                            visible="false"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            title="Address"
+                            labelSpanXL="4"
+                            labelSpanL="3"
+                            labelSpanM="4"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="0"
+                            emptySpanL="4"
+                            emptySpanM="0"
+                            emptySpanS="0"
+                            columnsXL="2"
+                            columnsL="1"
+                            columnsM="1">
+                            <f:content>
+                                <Label text="Full name of the contact" />
+                                <Input id="name2" value="{name}" />
+                                <Label text="Street and number where the contact is located" />
+                                <Input id="street2" value="{Street}" />
+                                <Input id="houseNumber2" value="{houseNumber}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Label text="ZIP Code and City" />
+                                <Input id="zipCode2" value="{ZIPCode}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Input id="city2" value="{City}" />
+                                <Label text="Country where the contact is located" />
+                                <Select id="country2" selectedKey="{Country}">
+                                    <items>
+                                        <core:Item text="England" key="England"/>
+                                        <core:Item text="Germany" key="Germany"/>
+                                        <core:Item text="USA" key="USA"/>
+                                    </items>
+                                </Select>
+                            </f:content>
+                        </f:SimpleForm>
+                     
+                        <f:SimpleForm id="SimpleFormChange354wideDual"
+                            visible="false"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            title="Address"
+                            labelSpanXL="4"
+                            labelSpanL="3"
+                            labelSpanM="4"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="0"
+                            emptySpanL="4"
+                            emptySpanM="0"
+                            emptySpanS="0"
+                            columnsXL="2"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false">
+                            <f:content>
+                                <core:Title text="Office" />
+                                <Label text="Full name of the contact" />
+                                <Input id="name3" value="{name}" />
+                                <Label text="Street and number where the contact is located" />
+                                <Input id="street3" value="{Street}" />
+                                <Input id="houseNumber3" value="{houseNumber}">
+                                    <layoutData>
+                                        <l:GridData span="XL2 L1 M3 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Label text="ZIP Code and City" />
+                                <Input id="zipCode3" value="{ZIPCode}">
+                                    <layoutData>
+                                        <l:GridData span="XL2 L1 M3 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Input id="city3" value="{City}" />
+                                <Label text="Country where the contact is located" />
+                                <Select id="country3" selectedKey="{Country}">
+                                    <items>
+                                        <core:Item text="England" key="England"/>
+                                        <core:Item text="Germany" key="Germany"/>
+                                        <core:Item text="USA" key="USA"/>
+                                    </items>
+                                </Select>
+                                <core:Title text="Online" />
+                                <Label text="Web page of the contact" />
+                                <Input id="webPage" value="{Url}" />
+                                <Label text="Twitter account of the contact" />
+                                <Input id="twitter" value="{Twitter}" />
+                            </f:content>
+                        </f:SimpleForm>
+                    
+                        <f:SimpleForm id="SimpleFormChange471"
+                            visible="false"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            title="Address"
+                            labelSpanXL="4"
+                            labelSpanL="4"
+                            labelSpanM="4"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="1"
+                            emptySpanL="1"
+                            emptySpanM="1"
+                            emptySpanS="0"
+                            columnsXL="1"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false">
+                            <f:content>
+                                <Label text="Name" />
+                                <Input id="name4" value="{name}" />
+                                <Label text="Street/No." />
+                                <Input id="street4" value="{Street}" />
+                                <Input id="houseNumber4" value="{houseNumber}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Label text="ZIP Code/City" />
+                                <Input id="zipCode4" value="{ZIPCode}">
+                                    <layoutData>
+                                        <l:GridData span="XL1 L2 M2 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Input id="city4" value="{City}" />
+                                <Label text="Country" />
+                                <Select id="country4" selectedKey="{Country}">
+                                    <items>
+                                        <core:Item text="England" key="England"/>
+                                        <core:Item text="Germany" key="Germany"/>
+                                        <core:Item text="USA" key="USA"/>
+                                    </items>
+                                </Select>
+                            </f:content>
+                        </f:SimpleForm>
+                        
+                    </VBox>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
