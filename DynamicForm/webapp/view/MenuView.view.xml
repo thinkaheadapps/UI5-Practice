@@ -3,7 +3,30 @@
 	<App>
 		<pages>
 			<Page title="MenuView">
-				<content></content>
+				<content>
+					<Table id="myTable" inset="false" headerText="Simple Table" items="{/items}">
+						<columns>
+							<Column>
+								<Text text="Column 1"/>
+							</Column>
+							<Column>
+								<Text text="Column 2"/>
+							</Column>
+							<Column>
+								<Text text="Column 3"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{column1}"/>
+									<Text text="{column2}"/>
+									<Text text="{column3}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
 			</Page>
 		</pages>
 	</App>

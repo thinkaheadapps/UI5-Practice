@@ -85,9 +85,23 @@
 				},
 				{
 					"name": "SimpleForm",
-					"pattern": "",
+					"pattern": "SimpleForm",
 					"target": [
 						"SimpleForm"
+					]
+				},
+				{
+					"name": "DynamicButton",
+					"pattern": "",
+					"target": [
+						"DynamicButton"
+					]
+				},
+					{
+					"name": "DynamicPage",
+					"pattern": "DynamicPage",
+					"target": [
+						"DynamicPage"
 					]
 				}
 			],
@@ -106,6 +120,14 @@
 				"SimpleForm": {
 					"viewType": "XML",
 					"viewName": "SimpleForm"
+				},
+				"DynamicButton": {
+					"viewType": "XML",
+					"viewName": "DynamicButton"
+				},
+				"DynamicPage": {
+					"viewType": "XML",
+					"viewName": "DynamicPage"
 				}
 			}
 		}
