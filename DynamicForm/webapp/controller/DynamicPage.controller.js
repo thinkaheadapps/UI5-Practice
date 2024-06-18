@@ -7,6 +7,15 @@ sap.ui.define([
 
 		
 		onInit: function () {
+			var page = new sap.m.Page ({
+			showHeader: true,
+			showNavButton: true,
+			title: "PageTitle"
+			
+			})
+			
+			var page_ID = this.getView().byId()
+			
 
 		},
 
