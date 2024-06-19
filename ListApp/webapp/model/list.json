@@ -1,0 +1,46 @@
+{
+    "listFile": [
+        {
+            "carName": "royalsRose",
+            "price": "12crore INR",
+            "detail": "big",
+            "Quantity": 1
+        },
+        {
+            "carName": "bmw",
+            "price": "2crore INR",
+            "detail": "Largest",
+            "Quantity": 2
+        },
+        {
+            "carName": "ferari",
+            "price": "50thosand USD",
+            "detail": "high range",
+            "Quantity": 3
+        },
+        {
+            "carName": "Fortuner",
+            "price": "32Lakh INR",
+            "detail": "india Largest cr",
+            "Quantity": 4
+        },
+        {
+            "carName": "LandyJeep",
+            "price": "10Lakh INR",
+            "detail": "popular",
+            "Quantity": 10
+        },
+        {
+            "carName": "jeepCampus",
+            "price": "20Lakh INR",
+            "detail": "new car",
+            "Quantity": 15
+        },
+        {
+            "carName": "hamar",
+            "price": "50thosand USD",
+            "detail": "msd",
+            "Quantity": 10
+        }
+    ]
+}

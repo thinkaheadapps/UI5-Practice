@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Demo.ListApp.controller.MainList"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Lists">
+				<content>
+					<List id ="listID"
+					headerText="Products" 
+					headerLevel="H2" 
+					items="{/listFile}"
+					itemPress="onItemPress"
+					>
+					<StandardListItem
+					title="{carName}" 
+				    counter="{Quantity}"
+					/>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
