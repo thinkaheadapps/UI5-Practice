@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Demo.ListApp.controller.ListFooter"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Sample: List - Footer">
+				<content>
+					<List id ="listFooterID"
+					headerText="Products" 
+					footerText="This is the footer text" 
+					binding="{/listFile}"
+					itemPress="onItemPress" 
+					>
+					<StandardListItem
+					 title="{carName}" 
+					 description="{ProductId}"
+					 icon="{ProductPicUrl}"
+					 iconDensityAware="false"
+					 iconInset="false"
+					 />
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
